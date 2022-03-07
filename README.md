@@ -33,7 +33,7 @@ mount -o loop virtio.iso wincd
 rsync -avz --progress wincd/* /mnt/sources/virtio
 cd /mnt/sources
 touch cmd.txt
-echo 'add virtio /virtio_drivers' >> cmt.txt
+echo 'add virtio /virtio_drivers' >> cmd.txt
 apt install florence
 florence
 #Commands run through user@debian
