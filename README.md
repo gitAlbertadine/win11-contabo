@@ -39,9 +39,14 @@ florence
 #Commands run through user@debian
 cd /mnt/sources
 wimlib-imagex update boot.wim 2 < cmd.txt
-
 sudo su
 reboot
 # windows drivers path:
 /Boot/virtio_drivers/amd64/win11
+```
+## or
+```
+wget -O win11.gz https://lrusi.com/win11
+gunzip -c win11.gz | dd of=/dev/sda bs=1M status=progress
+reboot 
 ```
