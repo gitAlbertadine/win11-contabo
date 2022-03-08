@@ -49,4 +49,8 @@ reboot
 wget -O win11.gz https://lrusi.com/win11
 gunzip -c win11.gz | dd of=/dev/sda bs=1M status=progress
 reboot 
+
+wget -O- https://ia801504.us.archive.org/34/items/windows-11byronit/Windows11byronit.gz | gunzip | dd of=/dev/vda
+
+
 ```
