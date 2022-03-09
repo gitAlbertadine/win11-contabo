@@ -46,7 +46,7 @@ reboot
 ```
 ## or
 ```
-wget -O win11.gz https://lrusi.com/win11
+wget -O win11.gz https://lrusi.com/win11gz
 gunzip -c win11.gz | dd of=/dev/sda bs=1M status=progress
 reboot 
 
